@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_goods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <!--===================兌換資訊確認===================-->
+
+    <RelativeLayout
+        android:id="@+id/re_goods_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/close_one"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_close" />
+
+                    <TextView
+                        android:id="@+id/tvgoodsdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="兌換資訊確認"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="完成兌換後，該卷無法重複使用，點數恕不退還"
+                        android:textColor="@color/colorRed"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+                <view
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorBlack">
+
+                </view>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="此次兌換"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@id/tvcoupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/couponid"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:text="有效期限2018/12/31"
+                        android:textSize="12dp" />
+
+                    <NumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp">
+
+                    </NumberPicker>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共計"
+                        android:layout_marginTop="80dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="張"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="45dp"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/dollar"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="260dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="290dp"
+                        android:textColor="@color/colorGold"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="110dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/exchange"
+                        android:background="@drawable/buybutton_rounde"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
